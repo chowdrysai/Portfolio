@@ -1,7 +1,6 @@
-<h2 align="center">Personal Portfolio <br/><a align="center" href="https://chowdrysai.netlify.app/" >chowdry Sai kumar</a></h2>
+<h2 align="center">Personal Portfolio <br/><a href="https://chowdrysai.netlify.app/">--> chowdry Sai kumar</a></h2>
 
 <br/>
-
 ## Fork 
 <p>Feel free to fork this repo to modify and make changes of your own. Please give me proper credit by linking it back to this repo. Thanks! 
   <br/> 
