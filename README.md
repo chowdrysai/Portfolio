@@ -1,4 +1,4 @@
-<h2 align="center">Personal Portfolio <br/><a href="https://chowdrysai.netlify.app/" >chowdry Sai kumar</a></h2>
+## <h2 align="center">Personal Portfolio <br/><a href="https://chowdrysai.netlify.app/" >chowdry Sai kumar</a></h2>
 
 <br/>
 
