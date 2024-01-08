@@ -6,7 +6,7 @@ import FoodImage from '../images/food.png';
 
 const Projects = () => {
     return (
-        <div style={{ height: '75vh' }}>
+        <div style={{ height: '100vh' }}>
             <h1 className='projectHeading'>My <b>Projects</b></h1>
             <div className='project'>
                 <ProjectBox projectPhoto={ComplaintApp} projectName="Complaint App" />
