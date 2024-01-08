@@ -47,7 +47,7 @@ const Nav = () => {
     return (
         <nav className={navbarblur? 'Navbar blur':'Navbar'}> 
  
-            <h1 title='Reload' onClick={()=>window.location.reload(true)} className='Logo'>CS</h1>
+            <h1 className='Logo'><Link style={{ textDecoration: 'none', color: 'white' }} to="/">CS </Link></h1>
 
             <div className='Hamburger' onClick={showMenu}>
                 <span className='bar'></span>

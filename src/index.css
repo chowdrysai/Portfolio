@@ -70,11 +70,9 @@ b{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  
   position: fixed;
   width: 100%;
   z-index: 2;
-
   height: 70px;
   top: 0;
   transition: all 0.7s;
@@ -87,7 +85,7 @@ b{
 }
 
 .Logo{
-  font-size: 32px;
+  font-size: 50px;
   letter-spacing: 2px;
   padding-left: 7%;
   color: #9067C6;
@@ -95,20 +93,56 @@ b{
   align-items: center;
   text-align: center;
   cursor:pointer;
+  text-shadow: 0 0 30px #9067C6
 }
 
 .NavbarLinks{
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
+  right: 0;
+  flex-wrap: wrap;
   align-items: center;
-  padding-right: 7%;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 22px; 
+  transition: all 1s;
+}
+@media (min-width:1300px) {
+  .NavbarLinks {
+  padding-right: 2%;
+  }
 }
 
 .NavbarLinks li{
   padding: 2px 20px;
   list-style-type: none;
+}
+@media (max-width: 1264px) {
+  .Logo {
+    font-size: 40px;
+    transition: all 1s;
+  }
+  .NavbarLinks {
+    font-size: 21px;
+     
+  }
+  .NavbarLinks li{
+    padding: 2px 10px;
+    transition: scale(0.9) all 2s;
+  }
+}
+@media (max-width: 1065px) {
+  .Logo {
+    font-size: 35px;
+    transition: all 1s;
+  }
+  .NavbarLinks {
+    font-size: 18px;
+    transition: scale(1) all 2s;
+  }
+  .NavbarLinks li{
+    padding: 2px 5.5px;
+  }
+
 }
 
 .NavbarLinks a{
@@ -121,10 +155,15 @@ b{
   padding: 2px 7px;
   letter-spacing: 0.5px;
   text-decoration: none;
+
 }
 
 .NavbarLinks a:hover{
   color: #ffffff;
+  transition: 0.3s;
+  text-shadow: 0px 0px 10px #9067C6;
+  filter: drop-shadow(0 0 8px #9067C6);
+
 }
 .NavbarLinks a::after{
   background-color: #ffffff;
@@ -144,7 +183,7 @@ b{
   display: none;
 }
 
-@media(max-width:800px){
+@media(max-width:900px){
   .Navbar{
     width: 100%;
   }
@@ -278,11 +317,13 @@ b{
 .AboutPage{
   display: flex;
   justify-content: space-evenly;
-  min-height: 80vh;
-  margin-top: 80px;
+  height: 75vh;
+  margin-top: 55px;
   align-items: center;
   padding: 25px;
+  z-index: 0;
 }
+
 
 .AboutText{
   width: 50%;
@@ -310,7 +351,7 @@ b{
   .AboutPage{
     display: block;
     text-align: center;
-    padding: 30px;    
+    height: fit-content;   
   }
   .AboutText{
     text-align: left;
@@ -335,7 +376,7 @@ b{
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 50px 10%;
+  margin: 70px 10%;
 }
 
 .SkillBox{
@@ -362,6 +403,9 @@ b{
 }
 
 @media(max-width: 500px) {
+  .AboutPage{
+    height: 90%;
+  }
   .AboutText{
     font-size: 16px;
   }
@@ -407,13 +451,13 @@ b{
   letter-spacing: 0.5px;
   font-size: 18px;
   line-height: 22px;
-  
   margin: 0px 25px 50px 25px;
   transition: 0.5s;
 }
 .projectBox:hover{
   transform: scale(1.05);
-  box-shadow: 0 4px 10px 0 #431f47;
+  box-shadow: 0 8px 10px 0 #431f47;
+  
 }
 
 .projectPhoto{
@@ -475,19 +519,23 @@ b{
 
 /* FOOTER */
 
-footer{
+footer {
   width: 100%;
   margin: 10px auto;
   margin-top: 60px;
   letter-spacing: 0.5px;
-  display:flex;
+  display: flex;
+  font-size: 20px;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-evenly;
   position: relative;
-  bottom: 0px;
+  bottom: 0;
+  left: 0;
+  right: 0;
   text-align: center;
 }
+
 
 footer h4{
   margin: 0 25px;
@@ -497,7 +545,7 @@ footer h4{
 .footerLinks{
   display: flex;
   width: 180px;
-  font-size: 18px;
+  font-size: 24px;
   justify-content: space-evenly;
 }
 

@@ -36,44 +36,47 @@ function Experience() {
     ];
 
     return (
-        <div className="App" style={{marginTop :'100px',paddingLeft:'15%', width:'75%'}} >
-            <VerticalTimeline layout="1-column">
-                {timeline.map((t, i) => {
-                    const contentStyle =
+        <>
+            <h1 className='SkillsHeading' style={{marginTop:'100px'}}> Professional <b> Experience </b> </h1>
+            <div  style={{paddingLeft:'0%', width:'100%',minHeight:'70vh', display:'flex',justifyContent:'center',alignItems:'center'}} >
+                <VerticalTimeline layout="1-column">
+                    {timeline.map((t, i) => {
+                        const contentStyle =
             i === 0
                 ? { background: 'rgb(33, 150, 243)', color: '#fff' }
                 : undefined;
-                    const arrowStyle =
+                        const arrowStyle =
             i === 0
                 ? { borderRight: '7px solid  rgb(33, 150, 243)' }
                 : undefined;
 
-                    return (
+                        return (
               
-                        <VerticalTimelineElement
-                            key={i}
-                            className="vertical-timeline-element--work"
-                            contentStyle={contentStyle}
-                            contentArrowStyle={arrowStyle}
-                            date={t.date}
-                            {...t.icon}
-                        >
-                            {t.title ? (
-                                <React.Fragment>
-                                    <h3 className="vertical-timeline-element-title">{t.title}</h3>
-                                    {t.subtitle && (
-                                        <h4 className="vertical-timeline-element-subtitle">
-                                            {t.subtitle}
-                                        </h4>
-                                    )}
-                                    {t.desc && <p>{t.desc}</p>}
-                                </React.Fragment>
-                            ) : undefined}
-                        </VerticalTimelineElement>
-                    );
-                })}
-            </VerticalTimeline>
-        </div>
+                            <VerticalTimelineElement
+                                key={i}
+                                className="vertical-timeline-element--work"
+                                contentStyle={contentStyle}
+                                contentArrowStyle={arrowStyle}
+                                date={t.date}
+                                {...t.icon}
+                            >
+                                {t.title ? (
+                                    <React.Fragment>
+                                        <h3 className="vertical-timeline-element-title">{t.title}</h3>
+                                        {t.subtitle && (
+                                            <h4 className="vertical-timeline-element-subtitle">
+                                                {t.subtitle}
+                                            </h4>
+                                        )}
+                                        {t.desc && <p>{t.desc}</p>}
+                                    </React.Fragment>
+                                ) : undefined}
+                            </VerticalTimelineElement>
+                        );
+                    })}
+                </VerticalTimeline>
+            </div>
+        </>
     );
 }
 

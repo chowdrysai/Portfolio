@@ -4,7 +4,7 @@ import Skills from './Skills';
 const Skillset = () => {
     return (
         <>
-            <h1 className='SkillsHeading' style={{marginTop:'100px'}}>Professional Skillset</h1>
+            <h1 className='SkillsHeading' style={{marginTop:'100px'}}> <b>Professional </b> Skillset</h1>
             <div className='skills'>
         
                 <Skills skill='React' />
@@ -22,8 +22,6 @@ const Skillset = () => {
                 <Skills skill='ESlint' />
                 <Skills skill='Bootstrap'/>
             </div>
-      
-     
         </>
     );
 };
