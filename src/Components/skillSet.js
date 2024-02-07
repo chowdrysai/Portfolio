@@ -11,14 +11,15 @@ const Skillset = () => {
                 <Skills skill='Node' />
                 <Skills skill='Express' />
                 <Skills skill='MongoDb' />
-                <Skills skill='Git' />
+                <Skills skill="MySQL" />
+                <Skills skill="TS" />
                 <Skills skill='Github' />
                 <Skills skill='Javascript' />
                 <Skills skill='Html' />
                 <Skills skill='Postman' />
+                <Skills skill="Vue" />
                 <Skills skill='Docker' />
                 <Skills skill='CSS' />
-                <Skills skill='Npm' />
                 <Skills skill='ESlint' />
                 <Skills skill='Bootstrap'/>
             </div>

@@ -1,7 +1,7 @@
 import React from 'react';
-import { FaReact, FaCss3Alt,FaDocker, FaGitAlt, FaGithub, FaNpm, FaHtml5, FaBootstrap } from 'react-icons/fa';
-import { DiNodejs, DiJavascript1 } from 'react-icons/di';
-import { SiExpress, SiMongodb,SiPostman,SiEslint } from 'react-icons/si';
+import { FaReact, FaCss3Alt,FaDocker, FaGithub, FaHtml5, FaBootstrap } from 'react-icons/fa';
+import { DiNodejs, DiJavascript1,DiMysql } from 'react-icons/di';
+import { SiExpress, SiMongodb,SiPostman,SiEslint,SiTypescript,SiVuedotjs } from 'react-icons/si';
 const Skills = ({ skill }) => {
     const icon = {
         Javascript: <DiJavascript1 />,
@@ -9,15 +9,16 @@ const Skills = ({ skill }) => {
         Node: <DiNodejs />,
         Express: <SiExpress />,
         MongoDb: <SiMongodb />,
-        Git: <FaGitAlt />,
         Postman:<SiPostman/>,
         Github: <FaGithub/>,
         ESlint: <SiEslint />,
-        Npm: <FaNpm />,
+        Vue: <SiVuedotjs />,
         CSS:<FaCss3Alt/>,
+        MySQL:<DiMysql />,
         Bootstrap: <FaBootstrap />,
         Docker:<FaDocker />,
-        Html:<FaHtml5 />
+        Html:<FaHtml5 />,
+        TS:<SiTypescript />
     };
 
     return (

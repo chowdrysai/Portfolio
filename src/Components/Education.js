@@ -58,15 +58,8 @@ function Experience() {
             <div className="App" style={{marginTop:'60px',minHeight:'70vh'}}>
                 <VerticalTimeline>
                     {timeline.map((t, i) => {
-                        const contentStyle =
-            i === 0
-                ? { background: 'rgb(33, 150, 243)', color: '#fff' }
-                : undefined;
-                        const arrowStyle =
-            i === 0
-                ? { borderRight: '7px solid  rgb(33, 150, 243)' }
-                : undefined;
-
+                        const contentStyle ={ background: 'rgb(33, 150, 243)', color: '#000' };
+                        const arrowStyle ={ borderRight: '7px solid  rgb(33, 150, 243)' };
                         return (
                             <VerticalTimelineElement
                                 key={i}
