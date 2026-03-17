@@ -14,7 +14,6 @@ const Home = () => {
                     <Typed />
                 </div>
                 <Tilt>
-                    {/* <img className=''style={{ height: "60vh", width: "40vw",transform: 'translateX(-100px)' }}  src={image} alt="" /> */}
                     <Lottie
                         className="illustration"
                         animationData={SpaceBoy}

@@ -5,7 +5,6 @@ import {
     VerticalTimelineElement,
 } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
     faBriefcase,
@@ -20,17 +19,31 @@ function Experience() {
     const timeline = [
         {
             icon: workIcon,
-            date: '2023, July - present',
-            title: 'SOFTWARE ENGINEER',
-            subtitle: 'AADVI TECH.SOLUTIONS',
-            desc: 'JavaScript, MERN stack developer, UI(User Interface) design, Postman API ,MySQL, Git/GitHub, Docker,',
+            date: 'July 2025 - Feb 2026',
+            title: 'SR. SOFTWARE ENGINEER',
+            subtitle: 'Max Trans Systems, Hyderabad',
+            desc: 'Led frontend revamp with reusable components, Redis caching, API rate limiting, and high-volume PDF/data pipelines on SQL.',
         },
         {
             icon: workIcon,
-            date: '2022, May - 2022, June',
-            title: 'INTERNSHIP',
-            subtitle: 'GUSTOVALLEY TECHNOVATION',
-            desc: 'Web development, HTML, CSS, Bootstrap',
+            date: 'April 2025 - June 2025',
+            title: 'FREELANCE ENGINEER',
+            subtitle: 'Nexg Works, Hyderabad',
+            desc: 'Designed secure authentication (2FA, IP tracking, CSP) and automated CI/CD pipelines for faster, safer releases.',
+        },
+        {
+            icon: workIcon,
+            date: 'July 2023 - March 2025',
+            title: 'SOFTWARE DEVELOPER',
+            subtitle: 'Aadvi Tech Solution, Hyderabad',
+            desc: 'Delivered production-grade web apps, optimized React/Redux performance, and built WebSocket-based real-time notifications.',
+        },
+        {
+            icon: workIcon,
+            date: 'May 2023 - June 2023',
+            title: 'SOFTWARE INTERN',
+            subtitle: 'Gusto Valley Technovations, Hyderabad',
+            desc: 'Built responsive React/Next.js interfaces using custom hooks and scalable state management.',
         },
 
     ];

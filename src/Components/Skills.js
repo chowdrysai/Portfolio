@@ -1,7 +1,25 @@
 import React from 'react';
-import { FaReact, FaCss3Alt,FaDocker, FaGithub, FaHtml5, FaBootstrap } from 'react-icons/fa';
-import { DiNodejs, DiJavascript1,DiMysql } from 'react-icons/di';
-import { SiExpress, SiMongodb,SiPostman,SiEslint,SiTypescript,SiVuedotjs } from 'react-icons/si';
+import { FaReact, FaCss3Alt, FaDocker, FaGithub, FaHtml5, FaBootstrap } from 'react-icons/fa';
+import { DiNodejs, DiJavascript1, DiMysql } from 'react-icons/di';
+import {
+    SiExpress,
+    SiMongodb,
+    SiPostman,
+    SiEslint,
+    SiTypescript,
+    SiVuedotjs,
+    SiRedux,
+    SiNextdotjs,
+    SiAmazonaws,
+    SiMicrosoftazure,
+    SiPostgresql,
+    SiMicrosoftsqlserver,
+    SiRedis,
+    SiTailwindcss,
+    SiChakraui,
+    SiAntdesign,
+    SiJirasoftware,
+} from 'react-icons/si';
 const Skills = ({ skill }) => {
     const icon = {
         Javascript: <DiJavascript1 />,
@@ -18,7 +36,18 @@ const Skills = ({ skill }) => {
         Bootstrap: <FaBootstrap />,
         Docker:<FaDocker />,
         Html:<FaHtml5 />,
-        TS:<SiTypescript />
+        TS:<SiTypescript />,
+        Redux:<SiRedux />,
+        'Next.js':<SiNextdotjs />,
+        AWS:<SiAmazonaws />,
+        Azure:<SiMicrosoftazure />,
+        PostgreSQL:<SiPostgresql />,
+        'SQL Server':<SiMicrosoftsqlserver />,
+        Redis:<SiRedis />,
+        Tailwind:<SiTailwindcss />,
+        'Chakra UI':<SiChakraui />,
+        'Ant Design':<SiAntdesign />,
+        Jira:<SiJirasoftware />,
     };
 
     return (

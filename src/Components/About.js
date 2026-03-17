@@ -10,11 +10,11 @@ const About = () => {
                 <h1 className='AboutTextHeading' >Get to <b>know</b> me!</h1>
                 <p>
             Hi, my name is <b>Chowdry Sai Kumar</b> and I am from Hyderabad, India.
-            I'm a <b>MERN stack developer</b> and completed graduation in <b>Information Technology</b>. <br/><br/>
-            Gained handful of experience working as a <b>software developer</b> .
-            I love creating projects that explore new things and have better functionalities, you can check out some of my work in the projects section.<br/><br/>
-            I am <b>open</b> to new collaborations or work where I can contribute and grow. Feel free to connect with me, links are in the footer.<br/>
-            Apart from coding I love to do <b>drawing,travelling</b> </p>
+            I am a <b>Full-Stack Developer</b> with 2.6+ years of experience building scalable web applications and APIs using <b>Node.js, NestJS, React,</b> and modern cloud platforms like <b>AWS</b> and <b>Azure</b>. <br/><br/>
+            I have worked as a <b>Sr. Software Engineer</b>, <b>Software Developer</b>, and <b>Freelance Engineer</b>, focusing on performant frontends, secure backends, cloud-native architectures, and CI/CD automation.
+            I love creating products that solve real problems and are robust, maintainable, and user-friendly—you can explore some of this work in the projects section.<br/><br/>
+            I am <b>open</b> to new opportunities where I can contribute, learn, and grow. Feel free to connect with me, links are in the footer.<br/>
+            Outside of work, I enjoy <b>drawing</b> and <b>travelling</b>. </p>
             </div>
 
             <div>

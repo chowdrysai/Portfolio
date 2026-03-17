@@ -1,43 +1,29 @@
 import React from 'react';
-import {FaGithub} from 'react-icons/fa';
 
-
-const  ProjectBox = ({projectPhoto, projectName}) => {
+const  ProjectBox = ({projectName}) => {
     const desc = {
-        'Complaint AppDesc' : 'Javascript, Node.js, Express, React, MongoDB, Handlebars, HTML, CSS ,Bootstrap, ESlint',
-        'ComplaintAppGithub' : 'https://github.com/chowdrysai/ComplaintApp',
-        'ComplaintAppWebsite' : '',
+        'EZ.ROIdesc' : 'Node.js, React.js, NestJS, MySQL, payment gateways, Tailwind, Azure (Blob Storage, Email, AI Search).',
+        'EZ.ROIGithub' : '',
+        'EZ.ROIWebsite' : '',
 
-        'Aadvi WebsiteDesc' : 'Javascript, Node.js, Express, React, MongoDB, HTML, CSS ,Bootstrap',
-        'AadviWebsiteGithub' : 'https://github.com/chowdrysai/FoodAppIn',
-        'AadviWebsiteWebsite' : '',
+        'MRSdesc' : 'Node.js, Express, React, Redux Toolkit, Microsoft SQL Server, AWS S3 & SES, cron and queue-based processing.',
+        'MRSGithub' : '',
+        'MRSWebsite' : '',
 
-        'Food AppDesc':'Javascript, Node.js, Express, React, Redux, MongoDB, HTML,CSS ,Bootstrap,JWt authentication, ESlint',
-        'FoodAppGithub':'https://github.com/chowdrysai/Aadvi',
-        'FoodAppWebsite':''
+        'Vigil - Xdesc':'NestJS, React.js, Redux Toolkit, MS SQL, Material UI, AWS S3 & SNS with scalable, modular architecture.',
+        'Vigil - XGithub':'',
+        'Vigil - XWebsite':''
     };
-    let show ='';
-    if(desc[projectName + 'Github']===''){
-        show='none';
-    }
     return (
         <div className='projectBox'> 
-            <img className='projectPhoto' src={projectPhoto} alt="Project display" />
-            <hr/> 
-            <div>
-                <br />
-                <h3>{projectName}</h3>
-                <br />
-                {desc[projectName + 'Desc']}
-                <br />
-
-                <a style={{display:show}} href={desc[projectName + 'Github']} target='_blank' rel="noreferrer">
-                    <button className='projectbtn'><FaGithub/> Github</button>
-                </a>
-
-                {/* <a href={desc[projectName + 'Website']} target='_blank'>
-              <button className='projectbtn'><CgFileDocument/> Demo</button>
-            </a> */}
+            <div className='projectThumb'>
+                <span className='projectThumbTitle'>{projectName}</span>
+            </div>
+            <div className='projectContent'>
+                <h3 className='projectTitle'>{projectName}</h3>
+                <p className='projectDesc'>
+                    {desc[projectName + 'desc']}
+                </p>
             </div>
         </div>
     );
